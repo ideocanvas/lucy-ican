@@ -28,11 +28,11 @@ export default function HomePage() {
     <div className="min-h-screen w-full bg-white dark:bg-background">
       {/* --- Navigation Bar --- */}
       <header className="sticky top-0 z-50 w-full border-b border-gray-200/50 bg-white/80 backdrop-blur-sm dark:border-gray-800/50 dark:bg-gray-950/80">
-        <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+        <div className="container mx-auto flex h-16 max-w-6xl items-center justify-start gap-8 px-4">
           <a href="#" className="text-xl font-bold">
             <GradientText>Lucy Ideocanvas</GradientText>
           </a>
-          <nav className="hidden items-center space-x-8 text-sm font-semibold text-gray-600 dark:text-gray-300 md:flex">
+          <nav className="ml-auto hidden items-center space-x-8 text-sm font-semibold text-gray-600 dark:text-gray-300 md:flex">
             <a href="#features" className="transition-colors hover:text-black dark:hover:text-white">Features</a>
             <a href="#contact" className="transition-colors hover:text-black dark:hover:text-white">Contact</a>
           </nav>
