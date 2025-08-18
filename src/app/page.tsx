@@ -56,10 +56,10 @@ export default function HomePage() {
           <div className="container mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                What's Coming to Lucy Ideocanvas?
+                What&apos;s Coming to Lucy Ideocanvas?
               </h2>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
-                Everything you'll need to bring your ideas to life.
+                Everything you&apos;ll need to bring your ideas to life.
               </p>
             </div>
             <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
@@ -98,7 +98,7 @@ export default function HomePage() {
         <section id="contact" className="py-24 sm:py-32">
           <div className="container mx-auto max-w-4xl px-4 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              We're Launching Soon!
+              We&apos;re Launching Soon!
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
               We are working hard to bring Lucy Ideocanvas to you. For partnership inquiries or to be notified when we go live, please contact us.
