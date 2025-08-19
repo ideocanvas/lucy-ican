@@ -20,7 +20,7 @@ export default function HomePage() {
             <a href="#contact" className="transition-colors hover:text-black dark:hover:text-white">Contact</a>
           </nav>
           <a href="#waitlist" className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105">
-            Get Notified
+            Join Waitlist
           </a>
         </div>
       </header>
@@ -29,18 +29,18 @@ export default function HomePage() {
         {/* --- Hero Section --- */}
         <section className="container mx-auto max-w-6xl px-4 py-24 text-center sm:py-32">
           <div className="mb-6 inline-block rounded-full bg-violet-100 px-4 py-1.5 text-sm font-semibold text-violet-700 dark:bg-violet-900/50 dark:text-violet-300">
-            Coming Soon
+            The Future of Collaboration is Coming
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
-            Share Ideas. <br />
-            <GradientText>Spark Innovation.</GradientText>
+            Where Great Ideas <br />
+            <GradientText>Find Their Team.</GradientText>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
-            Our platform for creative collaboration is currently under construction. Be the first to know when we launch and start turning dreams into reality!
+            Lucy Ideocanvas is the community-driven platform for innovators and creators. Share your vision, get feedback, find skilled collaborators, and bring your projects to life.
           </p>
           <div id="waitlist" className="mt-10 flex items-center justify-center gap-x-4">
             <a href="#" className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end px-6 py-3 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105">
-              Notify Me on Launch
+              Join the Waitlist
             </a>
             <div className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end p-0.5 transition-transform hover:scale-105">
               <a href="#features" className="block rounded-md bg-white px-6 py-2.5 text-base font-semibold text-gray-800 dark:bg-gray-950 dark:text-gray-200">
@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
           </div>
           <p className="mx-auto mt-4 max-w-2xl text-xs text-gray-500 dark:text-gray-400">
-            By clicking &#34;Notify Me&#34;, you agree to receive a one-time email notification when we launch. You may also receive future communications which you can opt-out of at any time.
+            By joining, you agree to receive a notification upon launch and future updates, which you can opt-out of anytime.
           </p>
         </section>
 
@@ -58,10 +58,10 @@ export default function HomePage() {
           <div className="container mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-                What&apos;s Coming to Lucy Ideocanvas?
+                The Ultimate Toolkit for Innovation
               </h2>
               <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
-                Everything you&apos;ll need to bring your ideas to life.
+                Everything you need to go from a spark of an idea to a fully-realized project.
               </p>
             </div>
             <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
@@ -69,36 +69,37 @@ export default function HomePage() {
                 <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-100 to-blue-100 shadow-md dark:from-purple-900/50 dark:to-blue-900/50">
                   <span className="text-4xl" role="img" aria-label="Lightbulb">{'\u{1F4A1}'}</span>
                 </div>
-                <h3 className="text-xl font-semibold">Share Your Ideas</h3>
+                <h3 className="text-xl font-semibold">Idea Incubator</h3>
                 <p className="mt-2 text-gray-600 dark:text-gray-400">
-                  A dedicated space to post your creative concepts and get instant, constructive feedback.
+                  A dedicated space to post your creative concepts and get instant, constructive feedback from a community of experts and enthusiasts.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-100 to-blue-100 shadow-md dark:from-purple-900/50 dark:to-blue-900/50">
                   <span className="text-4xl" role="img" aria-label="Handshake">{'\u{1F91D}'}</span>
                 </div>
-                <h3 className="text-xl font-semibold">Collaborate Together</h3>
+                <h3 className="text-xl font-semibold">Collaborator Matching</h3>
                 <p className="mt-2 text-gray-600 dark:text-gray-400">
-                  Find like-minded people with complementary skills to help bring your future vision to life.
+                  Find like-minded people with complementary skills—from developers to designers—to help bring your vision to life.
+                </p>
+              </div>
+              {/* --- THIS IS THE UPDATED BLOCK --- */}
+              <div className="flex flex-col items-center text-center">
+                <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-100 to-blue-100 shadow-md dark:from-purple-900/50 dark:to-blue-900/50">
+                  <span className="text-4xl" role="img" aria-label="Robot">{'\u{1F916}'}</span>
+                </div>
+                <h3 className="text-xl font-semibold">Free AI-Powered Guidance</h3>
+                <p className="mt-2 text-gray-600 dark:text-gray-400">
+                  Get instant feedback and refine your concepts with our AI assistant, accessible on the web and soon via WhatsApp for on-the-go support. Our WhatsApp number will be provided at launch.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-100 to-blue-100 shadow-md dark:from-purple-900/50 dark:to-blue-900/50">
-                  <span className="text-4xl" role="img" aria-label="Rocket">{'\u{1F680}'}</span>
+                  <span className="text-4xl" role="img" aria-label="Toolbox">{'\u{1F9F0}'}</span>
                 </div>
-                <h3 className="text-xl font-semibold">Launch Your Project</h3>
+                <h3 className="text-xl font-semibold">Collaborative Workspaces</h3>
                 <p className="mt-2 text-gray-600 dark:text-gray-400">
-                  Turn your polished concepts into real-world projects with community support and resources.
-                </p>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-100 to-blue-100 shadow-md dark:from-purple-900/50 dark:to-blue-900/50">
-                  <span className="text-4xl" role="img" aria-label="Chat Bubble">{'\u{1F4AC}'}</span>
-                </div>
-                <h3 className="text-xl font-semibold">AI Chatbot Support</h3>
-                <p className="mt-2 text-gray-600 dark:text-gray-400">
-                  In the future, get instant answers to your questions via our AI-powered chatbot on WhatsApp.
+                  Take your collaboration to the next level. Once you&apos;ve formed a team, create a private workspace to organize tasks, share files, and track progress, turning your idea into a tangible plan.
                 </p>
               </div>
             </div>
