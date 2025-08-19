@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
           </div>
           <p className="mx-auto mt-4 max-w-2xl text-xs text-gray-500 dark:text-gray-400">
-            By clicking "Notify Me", you agree to receive a one-time email notification when we launch. You may also receive future communications which you can opt-out of at any time.
+            By clicking &#34;Notify Me&#34;, you agree to receive a one-time email notification when we launch. You may also receive future communications which you can opt-out of at any time.
           </p>
         </section>
 
@@ -127,7 +127,7 @@ export default function HomePage() {
           <div className="container mx-auto max-w-4xl px-4">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">Terms of Service</h2>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
-              By using our website and signing up for our waitlist, you agree to these Terms of Service. These terms are a placeholder and will be updated upon our official launch. The service is provided on an "as is" and "as available" basis. We reserve the right to modify or discontinue the service at any time.
+              By using our website and signing up for our waitlist, you agree to these Terms of Service. These terms are a placeholder and will be updated upon our official launch. The service is provided on an &#34;as is&#34; and &#34;as available&#34; basis. We reserve the right to modify or discontinue the service at any time.
             </p>
           </div>
         </section>
