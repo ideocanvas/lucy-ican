@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const GradientText = ({ children }: { children: React.ReactNode }) => (
   <span className="bg-gradient-to-r from-gradient-start to-gradient-end bg-clip-text text-transparent">
@@ -7,13 +7,6 @@ const GradientText = ({ children }: { children: React.ReactNode }) => (
 );
 
 export default function HomePage() {
-  useEffect(() => {
-    // Initialize AdSense ads after component mounts
-    if (typeof window !== 'undefined' && (window as any).adsbygoogle) {
-      ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
-    }
-  }, []);
-
   return (
     <div className="min-h-screen w-full bg-background bg-starry">
       {/* --- Navigation Bar --- */}
