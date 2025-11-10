@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 
 // Configure the Inter font with desired weights
 const inter = Inter({ subsets: ["latin"], weight: ["400", "600", "700"] });
@@ -19,15 +18,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Google AdSense Script */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2207805704631015"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-      </head>
       {/* Applying the Inter font class to the body */}
       <body className={inter.className}>{children}</body>
     </html>
