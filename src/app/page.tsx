@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const GradientText = ({ children }: { children: React.ReactNode }) => (
   <span className="bg-gradient-to-r from-gradient-start to-gradient-end bg-clip-text text-transparent">
@@ -7,6 +7,13 @@ const GradientText = ({ children }: { children: React.ReactNode }) => (
 );
 
 export default function HomePage() {
+  useEffect(() => {
+    // Initialize AdSense ads after component mounts
+    if (typeof window !== 'undefined' && (window as any).adsbygoogle) {
+      ((window as any).adsbygoogle = (window as any).adsbygoogle || []).push({});
+    }
+  }, []);
+
   return (
     <div className="min-h-screen w-full bg-background bg-starry">
       {/* --- Navigation Bar --- */}
@@ -56,6 +63,18 @@ export default function HomePage() {
         {/* --- Features Section --- */}
         <section id="features" className="py-24 sm:py-32">
           <div className="container mx-auto max-w-6xl px-4">
+            {/* Google AdSense Ad Placement */}
+            <div className="mb-16 flex justify-center">
+              <ins
+                className="adsbygoogle"
+                style={{ display: 'block' }}
+                data-ad-client="ca-pub-2207805704631015"
+                data-ad-slot="1234567890"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              ></ins>
+            </div>
+
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                 The Ultimate Toolkit for Innovation
