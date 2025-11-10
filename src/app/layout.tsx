@@ -18,6 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2207805704631015"
+          crossOrigin="anonymous"
+        />
+      </head>
       {/* Applying the Inter font class to the body */}
       <body className={inter.className}>{children}</body>
     </html>
