@@ -133,14 +133,22 @@ const DashboardPage = () => {
             </div>
           </div>
 
-          {/* Coming Soon */}
+          {/* Recent Activity */}
           <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-6">
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-              Coming Soon
+              Recent Activity
             </h3>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              More features will be available when Lucy Ideocanvas officially launches.
-            </p>
+            <div className="mt-4 space-y-3">
+              <div className="flex items-center space-x-3">
+                <div className="h-8 w-8 rounded-full bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-blue-600 dark:text-blue-400">✓</span>
+                </div>
+                <div>
+                  <p className="text-sm text-gray-900 dark:text-white">Account created</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">Welcome to Lucy Ideocanvas!</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>

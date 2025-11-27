@@ -33,9 +33,6 @@ export default function HomePage() {
       <main>
         {/* --- Hero Section --- */}
         <section className="container mx-auto max-w-6xl px-4 py-24 text-center sm:py-32">
-          <div className="mb-6 inline-block rounded-full bg-violet-100 px-4 py-1.5 text-sm font-semibold text-violet-700 dark:bg-violet-900/50 dark:text-violet-300">
-            The Future of Collaboration is Coming
-          </div>
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
             Where Great Ideas <br />
             <GradientText>Find Their Team.</GradientText>
@@ -43,9 +40,9 @@ export default function HomePage() {
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
             Lucy Ideocanvas is the community-driven platform for innovators and creators. Share your vision, get feedback, find skilled collaborators, and bring your projects to life.
           </p>
-          <div id="waitlist" className="mt-10 flex items-center justify-center gap-x-4">
-            <a href="#" className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end px-6 py-3 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105">
-              Join the Waitlist
+          <div className="mt-10 flex items-center justify-center gap-x-4">
+            <a href="/sign-up" className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end px-6 py-3 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105">
+              Get Started
             </a>
             <div className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end p-0.5 transition-transform hover:scale-105">
               <a href="#features" className="block rounded-md bg-white px-6 py-2.5 text-base font-semibold text-gray-800 dark:bg-gray-950 dark:text-gray-200">
@@ -53,9 +50,6 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <p className="mx-auto mt-4 max-w-2xl text-xs text-gray-500 dark:text-gray-400">
-            By joining, you agree to receive a notification upon launch and future updates, which you can opt-out of anytime.
-          </p>
         </section>
 
         {/* --- Features Section --- */}
@@ -116,21 +110,21 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold">Collaborative Workspaces</h3>
                 <p className="mt-2 text-gray-600 dark:text-gray-400">
-                  Take your collaboration to the next level. Once you&apos;ve formed a team, create a private workspace to organize tasks, share files, and track progress, turning your idea into a tangible plan.
+                  Take your collaboration to the next level. Once you've formed a team, create a private workspace to organize tasks, share files, and track progress, turning your idea into a tangible plan.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* --- Launching Soon / Contact Section --- */}
+        {/* --- Contact Section --- */}
         <section id="contact" className="py-24 sm:py-32">
           <div className="container mx-auto max-w-4xl px-4 text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              We&apos;re Launching Soon!
+              Get in Touch
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-              We are working hard to bring Lucy Ideocanvas to you. For partnership inquiries or to be notified when we go live, please contact us.
+              Have questions or want to collaborate? We'd love to hear from you.
             </p>
             <div className="mt-8">
               <a href="mailto:webmaster@ideocanvas.com" className="inline-block rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end px-8 py-4 text-base font-semibold text-white shadow-lg transition-transform hover:scale-105">
@@ -145,7 +139,7 @@ export default function HomePage() {
           <div className="container mx-auto max-w-4xl px-4">
             <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-3xl">Terms of Service</h2>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
-              By using our website and signing up for our waitlist, you agree to these Terms of Service. These terms are a placeholder and will be updated upon our official launch. The service is provided on an &#34;as is&#34; and &#34;as available&#34; basis. We reserve the right to modify or discontinue the service at any time.
+              By using our website and services, you agree to our Terms of Service. The service is provided on an &#34;as is&#34; and &#34;as available&#34; basis. We reserve the right to modify or discontinue the service at any time.
             </p>
           </div>
         </section>
@@ -157,8 +151,8 @@ export default function HomePage() {
               Your privacy is important to us. This policy explains what information we collect and how we use it.
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-6 text-gray-600 dark:text-gray-400">
-              <li><strong>Information We Collect:</strong> We collect your email address when you sign up for our waitlist.</li>
-              <li><strong>How We Use Information:</strong> We use your email to send you a notification when our service launches and potentially for future updates. We will not sell or share your personal information with third parties.</li>
+              <li><strong>Information We Collect:</strong> We collect information you provide when creating an account and using our services.</li>
+              <li><strong>How We Use Information:</strong> We use your information to provide and improve our services. We will not sell or share your personal information with third parties.</li>
               <li><strong>Opt-Out:</strong> You can opt-out of our communications at any time by contacting us at <a href="mailto:webmaster@ideocanvas.com" className="underline">webmaster@ideocanvas.com</a>.</li>
             </ul>
           </div>
