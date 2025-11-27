@@ -19,9 +19,14 @@ export default function HomePage() {
             <a href="#features" className="transition-colors hover:text-black dark:hover:text-white">Features</a>
             <a href="#contact" className="transition-colors hover:text-black dark:hover:text-white">Contact</a>
           </nav>
-          <a href="#waitlist" className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105">
-            Join Waitlist
-          </a>
+          <div className="flex items-center gap-4">
+            <a href="/sign-in" className="text-sm font-semibold text-gray-600 dark:text-gray-300 transition-colors hover:text-black dark:hover:text-white">
+              Sign In
+            </a>
+            <a href="/sign-up" className="rounded-lg bg-gradient-to-r from-gradient-start to-gradient-end px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105">
+              Sign Up
+            </a>
+          </div>
         </div>
       </header>
 
