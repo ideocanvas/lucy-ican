@@ -26,13 +26,18 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9.39.1",
+    "@next/eslint-plugin-next": "^16.0.7",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.11",
     "@types/nodemailer": "^7.0.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/parser": "^8.48.1",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "tailwindcss": "^4",
     "typescript": "^5",
     "wrangler": "^4.30.0"
