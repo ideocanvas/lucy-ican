@@ -44,35 +44,35 @@ export const auth = betterAuth({
     },
     sendEmail: async (emailOptions: EmailOptions) => {
       const { to, subject, html } = emailOptions;
-      
+
       // Use our custom email sending function
       const success = await sendEmail({
         to,
         subject,
         html,
       });
-      
+
       if (!success) {
         throw new Error("Failed to send email");
       }
     },
     templates: {
       emailVerification: (params: EmailVerificationParams) => {
-        const template = emailTemplates.verification(params.url, params.user.email);
+        const template = emailTemplates.verification(params.url);
         return {
           subject: template.subject,
           html: template.html,
         };
       },
       passwordReset: (params: PasswordResetParams) => {
-        const template = emailTemplates.passwordReset(params.url, params.user.email);
+        const template = emailTemplates.passwordReset(params.url);
         return {
           subject: template.subject,
           html: template.html,
         };
       },
       magicLink: (params: EmailVerificationParams) => {
-        const template = emailTemplates.verification(params.url, params.user.email);
+        const template = emailTemplates.verification(params.url);
         return {
           subject: "Your Magic Link",
           html: template.html.replace("Verify Your Email Address", "Your Magic Link")
