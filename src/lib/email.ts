@@ -59,7 +59,7 @@ export const sendEmail = async (options: EmailOptions): Promise<boolean> => {
 
 // Email templates
 export const emailTemplates = {
-  verification: (verificationUrl: string, userEmail: string) => ({
+  verification: (verificationUrl: string) => ({
     subject: 'Verify your email address',
     html: `
       <!DOCTYPE html>
@@ -93,7 +93,7 @@ export const emailTemplates = {
     `,
   }),
 
-  passwordReset: (resetUrl: string, userEmail: string) => ({
+  passwordReset: (resetUrl: string) => ({
     subject: 'Reset your password',
     html: `
       <!DOCTYPE html>

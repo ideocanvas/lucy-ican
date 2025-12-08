@@ -1,10 +1,21 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState, useEffect } from "react";
 import { authClient } from "@/lib/auth-client";
 
+interface User {
+  id: string;
+  name: string;
+  email: string;
+  emailVerified: boolean;
+  image?: string | null;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 const DashboardPage = () => {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -105,9 +116,9 @@ const DashboardPage = () => {
               {user.image && (
                 <div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">Profile Image:</span>
-                  <img 
-                    src={user.image} 
-                    alt="Profile" 
+                  <img
+                    src={user.image}
+                    alt="Profile"
                     className="mt-1 h-16 w-16 rounded-full object-cover"
                   />
                 </div>
