@@ -27,7 +27,7 @@ const SignUpPage = () => {
     setError("");
 
     try {
-      const { data, error } = await authClient.signUp.email({
+      const { error } = await authClient.signUp.email({
         email: formData.email,
         password: formData.password,
         name: formData.name,
@@ -51,6 +51,7 @@ const SignUpPage = () => {
         setError(error.message || "An error occurred during sign up");
       }
     } catch (err) {
+      console.log("failed to signup", err);
       setError("An unexpected error occurred");
     } finally {
       setLoading(false);
@@ -68,14 +69,14 @@ const SignUpPage = () => {
             Join Lucy Ideocanvas and start collaborating
           </p>
         </div>
-        
+
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           {error && (
             <div className="rounded-md bg-red-50 dark:bg-red-900/20 p-4">
               <p className="text-sm text-red-800 dark:text-red-200">{error}</p>
             </div>
           )}
-          
+
           <div className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -92,7 +93,7 @@ const SignUpPage = () => {
                 placeholder="Enter your full name"
               />
             </div>
-            
+
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Email Address
@@ -108,7 +109,7 @@ const SignUpPage = () => {
                 placeholder="Enter your email"
               />
             </div>
-            
+
             <div>
               <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Password
@@ -125,7 +126,7 @@ const SignUpPage = () => {
                 placeholder="Enter your password (min 8 characters)"
               />
             </div>
-            
+
             <div>
               <label htmlFor="image" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                 Profile Image URL (Optional)
